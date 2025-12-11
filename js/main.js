@@ -26,7 +26,7 @@ async function loadActors() {
   }
 
   try {
-    const res = await fetch("http://localhost:3000/api/actors");
+    const res = await fetch("/api/actors");
     const actors = await res.json();
     console.log("🎭 Получено актёров:", actors);
 
@@ -65,7 +65,7 @@ async function loadCatalog() {
 
   // --- 1. Загружаем тайтлы из бэка ---
   async function loadTitles() {
-    const res = await fetch("http://localhost:3000/api/titles");
+    const res = await fetch("/api/titles");
     titles = await res.json();
     if (!titles.length) return;
     renderCarousel(); // первый рендер без анимации
@@ -185,7 +185,7 @@ async function loadWatchPage() {
   if (!id) return;
 
   try {
-    const res = await fetch(`http://localhost:3000/api/titles/${id}`);
+    const res = await fetch(`/api/titles/${id}`);
     const data = await res.json();
 
     // Заполняем блоки
@@ -280,7 +280,7 @@ function setupSearch() {
 
     try {
       const res = await fetch(
-        `http://localhost:3000/api/search?q=${encodeURIComponent(query)}`
+        `/api/search?q=${encodeURIComponent(query)}`
       );
 
       if (!res.ok) {
