@@ -17,7 +17,7 @@
 
     async function loadActor() {
       try {
-        const res = await fetch(`http://localhost:3000/api/actors/${actorId}`);
+        const res = await fetch(`/api/actors/${actorId}`);
         const actor = await res.json();
 
         const container = document.getElementById("actor-card");
