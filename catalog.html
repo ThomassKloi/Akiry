@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог | Akiry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+    <div id="nav"></div>
+    <!-- Контент -->
+   <section class="flex flex-col items-center mt-10">
+    <!-- Карусель + стрелки -->
+    <div class="flex items-center justify-center space-x-6">
+      <!-- Кнопка влево -->
+      <button
+        id="prev"
+        class="w-12 h-12 rounded-full bg-white/10 text-white text-2xl flex items-center justify-center hover:bg-white/20 transition"
+      >
+        ‹
+      </button>
+
+      <!-- Окно слайдера -->
+      <div
+        id="carouselViewport"
+        class="w-[1130px] overflow-hidden flex justify-center mt-10"
+      >
+        <div
+          id="carousel"
+          class="flex gap-10 transition-opacity duration-300 ease-out"
+        ></div>
+      </div>
+
+      <!-- Кнопка вправо -->
+      <button
+        id="next"
+        class="w-12 h-12 rounded-full bg-white/10 text-white text-2xl flex items-center justify-center hover:bg-white/20 transition"
+      >
+        ›
+      </button>
+    </div>
+
+    <!-- Кнопка "Смотреть" ПОД каруселью -->
+    <div class="mt-8">
+      <button
+        id="watchBtn"
+        class="w-[259px] h-[47px] bg-white text-[28px] text-black mt-2 px-8 rounded-full font-semibold hover:scale-105 active:scale-95 transition"
+      >
+        Смотреть
+      </button>
+    </div>
+  </section>
+  </main>
+
+  <script src="/js/main.js"></script>
+    <script src="js/script.js">// JS можно будет использовать позже для интерактива (поиск, меню и т.д.)</script>
+    <!--<script src="gallery.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Шапка -->
+  <header class="h-[60px] mr-10 ml-10  flex items-center justify-between py-4 px-8 bg-gradient-to-l from-black via-black/50 to-transparent" style="background-color: rgba(157, 157, 157, 0.2); border-radius: 50px;">
+    <div class="flex items-center space-x-3">
+      <div class="w-10 h-10 rounded-full bg-cover bg-[url('/img/logo.jpg')]"></div>
+      <a href="/index.html" class="text-xl font-bold text-white">Akiry</a>
+    </div>
+    <nav class="flex space-x-[65px] text-white text-[14px]">
+        <a href="/index.html" class="transition-all duration-200 hover:underline hover:scale-105">Главная</a>
+        <a href="/catalog.html" class="transition-all duration-200 hover:underline hover:scale-105">Каталог</a>
+        <a href="/about.html" class="transition-all duration-200 hover:underline hover:scale-105">О нас</a>
+        <a href="/contacts.html" class="transition-all duration-200 hover:underline hover:scale-105">Контакты</a>
+        <a href="/acters/acter.html" class="transition-all duration-200 hover:underline hover:scale-105">Актёры</a>
+        <a href="#" class="transition-all duration-200 hover:underline hover:scale-105">Поддержать нас</a>
+        
+    </nav>
+<!-- Поиск -->
+<div id="searchContainer" class="relative w-[317px]">
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="Поиск"
+    class="w-full h-[34px] placeholder-gray-400 bg-white/10 rounded-full px-4 py-2
+           focus:outline-none focus:ring-2 focus:ring-white/10"
+  />
+  <!-- Выпадающие подсказки -->
+  <div
+    id="searchSuggestions"
+    class="absolute left-0 right-0 mt-2 bg-black/90 rounded-xl border border-white/10
+           shadow-xl text-sm max-h-80 overflow-y-auto hidden z-50"
+  ></div>
+</div>  
+   
+  </header>
+
+  
